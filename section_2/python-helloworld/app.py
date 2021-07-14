@@ -15,7 +15,7 @@ metric_check = 0
 def before_first_request():
     log_level = logging.DEBUG
 
-    logging.basicConfig(filename="app.log")
+    logging.basicConfig(filename="app.log", level=logging.DEBUG)
     
     app.logger.setLevel(log_level)
 
